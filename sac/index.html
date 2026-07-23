@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Central de Ajuda — eDrive Go</title>
+<meta name="description" content="Perguntas diretas, respostas diretas sobre o aluguel de BYD Dolphin 0km da eDrive Go: valores, documentação, seguro, recarga, contrato e suporte." />
+<meta name="robots" content="index, follow" />
+<link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+<link rel="canonical" href="https://www.edrivego.com/sac" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Archivo+Black&display=swap" rel="stylesheet" />
+
+<style>
+  :root{
+    --bg:#0a0812;
+    --bg-deep:#090712;
+    --panel:#110c1e;
+    --panel-border:#231a33;
+    --green:#2ee6a8;
+    --green-deep:#05110c;
+    --purple:#c9a8f0;
+    --text:#f6f4fa;
+    --muted:#d5d0e2;
+    --muted-2:#b9b3c9;
+    --muted-3:#8f88a3;
+    --pink:#ff8998;
+    --radius-pill:999px;
+    --radius-card:16px;
+  }
+  *{box-sizing:border-box;}
+  html,body{
+    margin:0;padding:0;min-height:100vh;
+    background:var(--bg);
+    color:var(--text);
+    font-family:Archivo, Arial, sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  body{
+    background-image:
+      radial-gradient(60% 40% at 15% 0%, rgba(46,230,168,0.08), transparent 60%),
+      radial-gradient(50% 35% at 100% 10%, rgba(201,168,240,0.10), transparent 60%);
+    background-attachment:fixed;
+  }
+  a{color:inherit;}
+  img,svg{display:block;}
+  .wrap{max-width:920px;margin:0 auto;padding:0 24px;}
+
+  h1,h2,h3{
+    font-family:"Archivo Black", Archivo, sans-serif;
+    font-weight:700;
+    letter-spacing:-0.01em;
+    margin:0;
+    line-height:1.08;
+  }
+
+  /* header */
+  header.site{
+    position:sticky;top:0;z-index:20;
+    background:rgba(10,8,18,0.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.06);
+  }
+  .site-inner{
+    max-width:920px;margin:0 auto;padding:16px 24px;
+    display:flex;align-items:center;justify-content:space-between;gap:16px;
+  }
+  .logo{
+    display:flex;align-items:center;gap:6px;
+    font-family:"Archivo Black", Archivo, sans-serif;
+    font-size:18px;letter-spacing:-0.02em;text-decoration:none;
+    white-space:nowrap;
+  }
+  .logo .dot{color:var(--green);}
+  .logo .go-arrow{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:20px;height:20px;border-radius:6px;background:var(--green);
+    color:var(--green-deep);font-size:11px;margin-left:2px;
+  }
+  .back-home{
+    font-size:13px;color:var(--muted-2);text-decoration:none;
+    display:flex;align-items:center;gap:6px;
+  }
+  .back-home:hover{color:var(--text);}
+  .btn-cta{
+    display:inline-flex;align-items:center;gap:8px;
+    background:var(--green);color:var(--green-deep);
+    font-family:Archivo, Arial, sans-serif;font-weight:900;font-size:14px;
+    padding:10px 18px;border-radius:var(--radius-pill);
+    text-decoration:none;white-space:nowrap;
+    box-shadow:0 8px 24px -8px rgba(46,230,168,0.5);
+  }
+  .btn-cta:hover{filter:brightness(1.05);}
+
+  /* hero */
+  .hero{padding:56px 0 24px;text-align:center;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:8px;
+    border:1px solid rgba(46,230,168,0.35);
+    background:rgba(46,230,168,0.08);
+    color:var(--green);
+    font-size:12px;font-weight:800;letter-spacing:0.06em;text-transform:uppercase;
+    padding:6px 14px;border-radius:var(--radius-pill);
+    margin-bottom:20px;
+  }
+  .eyebrow .pulse{width:6px;height:6px;border-radius:50%;background:var(--green);}
+  .hero h1{font-size:44px;margin-bottom:16px;}
+  .hero p.sub{
+    color:var(--muted-2);font-size:17px;line-height:1.55;
+    max-width:640px;margin:0 auto;
+  }
+
+  /* search + filters */
+  .controls{padding:28px 0 16px;position:sticky;top:64px;z-index:15;background:var(--bg);box-shadow:0 24px 24px -24px var(--bg);}
+  .search-box{position:relative;margin-bottom:16px;}
+  .search-box input{
+    width:100%;padding:14px 18px 14px 44px;
+    background:var(--panel);border:1px solid var(--panel-border);
+    border-radius:var(--radius-pill);color:var(--text);
+    font-family:Archivo, Arial, sans-serif;font-size:15px;outline:none;
+  }
+  .search-box input::placeholder{color:var(--muted-3);}
+  .search-box input:focus{border-color:rgba(46,230,168,0.5);}
+  .search-box svg{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--muted-3);}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    border:1px solid var(--panel-border);background:var(--panel);
+    color:var(--muted-2);font-size:13px;font-weight:700;
+    padding:8px 14px;border-radius:var(--radius-pill);cursor:pointer;
+    user-select:none;white-space:nowrap;
+  }
+  .chip.active{background:var(--green);border-color:var(--green);color:var(--green-deep);}
+  .count-line{color:var(--muted-3);font-size:13px;margin:14px 2px 0;}
+
+  /* faq */
+  main{padding:12px 0 40px;}
+  .cat-section{margin-top:36px;}
+  .cat-title{
+    color:var(--green);font-size:12px;font-weight:800;
+    letter-spacing:0.08em;text-transform:uppercase;
+    margin-bottom:12px;padding-left:2px;
+  }
+  details.faq-item{
+    background:var(--panel);
+    border:1px solid var(--panel-border);
+    border-left:3px solid var(--green);
+    border-radius:12px;
+    margin-bottom:10px;
+    overflow:hidden;
+  }
+  details.faq-item summary{
+    list-style:none;cursor:pointer;
+    padding:16px 20px;
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    font-weight:700;font-size:15.5px;color:var(--text);
+  }
+  details.faq-item summary::-webkit-details-marker{display:none;}
+  .chev{color:var(--green);font-size:13px;transition:transform 0.15s ease;flex-shrink:0;}
+  details.faq-item[open] .chev{transform:rotate(90deg);}
+  details.faq-item .answer{
+    padding:0 20px 18px;color:var(--muted);font-size:14.5px;line-height:1.6;
+  }
+  mark{background:rgba(46,230,168,0.35);color:var(--text);border-radius:3px;padding:0 2px;}
+  .no-results{display:none;text-align:center;color:var(--muted-3);padding:40px 0;font-size:14px;}
+
+  /* footer CTA */
+  .cta-card{
+    margin:56px 0 24px;
+    background:radial-gradient(120% 100% at 50% 0%, rgba(201,168,240,0.16), rgba(17,12,30,0.4));
+    border:1px solid rgba(201,168,240,0.25);
+    border-radius:24px;padding:48px 24px;text-align:center;
+  }
+  .cta-card .go-badge{
+    display:inline-flex;align-items:center;justify-content:center;gap:4px;
+    font-family:"Archivo Black", Archivo, sans-serif;font-size:20px;
+    margin-bottom:16px;
+  }
+  .cta-card h2{font-size:28px;margin-bottom:12px;}
+  .cta-card p{color:var(--muted-2);font-size:15px;margin-bottom:24px;}
+  .cta-card .btn-cta{font-size:15px;padding:14px 28px;}
+  .cta-card .fine{color:var(--muted-3);font-size:12.5px;margin-top:16px;}
+
+  footer.site{padding:24px 0 56px;text-align:center;}
+  .social-row{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-bottom:14px;}
+  .social-row a{color:var(--muted-2);font-size:13px;text-decoration:none;font-weight:600;}
+  .social-row a:hover{color:var(--green);}
+  footer.site .legal{color:var(--muted-3);font-size:12px;}
+  footer.site .legal a{text-decoration:underline;}
+  .disclaimer{
+    max-width:640px;margin:24px auto 0;padding:0 24px;
+    color:var(--muted-3);font-size:12.5px;line-height:1.6;text-align:center;
+  }
+
+  @media (max-width:640px){
+    .hero h1{font-size:32px;}
+    .site-inner{padding:14px 16px;}
+    .back-home span{display:none;}
+    .controls{top:60px;}
+  }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="site-inner">
+    <a class="logo" href="/">e<span class="dot">·</span>DRIVE GO<span class="go-arrow">&#9654;</span></a>
+    <a class="back-home" href="/">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M5 12l7 7M5 12l7-7"/></svg>
+      <span>Voltar para o site</span>
+    </a>
+  </div>
+</header>
+
+<div class="wrap">
+  <section class="hero">
+    <span class="eyebrow"><span class="pulse"></span> Central de Ajuda</span>
+    <h1>Perguntas diretas,<br/>respostas diretas.</h1>
+    <p class="sub">Tudo sobre o aluguel do BYD Dolphin 0km da eDrive Go: valores, documentação, seguro, recarga, contrato e suporte. Se sua dúvida não estiver aqui, fale direto com a equipe no WhatsApp.</p>
+  </section>
+
+  <div class="controls">
+    <div class="search-box">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      <input id="search" type="text" placeholder="Busque por uma palavra, ex: caução, seguro, contrato..." autocomplete="off" />
+    </div>
+    <div class="chips" id="chips">
+      <div class="chip active" data-cat="all">Todas</div>
+    </div>
+    <div class="count-line" id="countLine"></div>
+  </div>
+
+  <main id="faqRoot"></main>
+
+  <p class="no-results" id="noResults">Nenhuma pergunta encontrada. Tente outra palavra ou fale direto com a equipe.</p>
+
+  <div class="cta-card">
+    <div class="go-badge">e<span style="color:var(--green)">·</span>DRIVE <span style="color:var(--green)">GO&#9654;</span></div>
+    <h2>Ainda ficou com dúvida?</h2>
+    <p>A equipe responde direto no grupo do WhatsApp — sem robô, sem fila.</p>
+    <a class="btn-cta" href="https://chat.whatsapp.com/IrIujrgevFgBLvwuz6yPGu?s=cl&amp;p=a&amp;ilr=4&amp;amv=2" target="_blank" rel="noopener">
+      Falar com a equipe no WhatsApp
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <p class="fine">Sujeito à análise de documentação e à disponibilidade da frota.</p>
+  </div>
+
+  <footer class="site">
+    <div class="social-row">
+      <a href="https://www.instagram.com/edrivego/" target="_blank" rel="noopener">@edrivego</a>
+      <a href="https://www.instagram.com/edriveenergy/" target="_blank" rel="noopener">@edriveenergy</a>
+      <a href="/#politica">Política de Privacidade</a>
+    </div>
+    <p class="legal">eDrive Go — aluguel de BYD Dolphin 0km para motoristas de app.</p>
+  </footer>
+
+  <p class="disclaimer">As condições descritas nesta página são as divulgadas publicamente pela eDrive Go. Valores, prazos e regras finais são sempre confirmados no atendimento e no contrato de locação, assinado após a análise da documentação.</p>
+</div>
+
+<script>
+(function(){
+  var DATA = [
+    {cat:"Sobre a eDrive Go", items:[
+      ["O que é a eDrive Go?","A eDrive Go é uma operação de locação de carros elétricos para motoristas de aplicativo. Você aluga um BYD Dolphin 0km por semana, com tudo incluso, para rodar em apps como Uber e 99."],
+      ["O que é a \"Virada Elétrica\"?","É o nome que a eDrive Go dá para a troca do carro a combustão pelo elétrico: em vez de gastar com gasolina todo dia, você paga um aluguel semanal fixo e roda com energia."],
+      ["O que é o ecossistema eDrive Energy?","É a estrutura de recarga da eDrive Go: um hub com mais de 80 carregadores em Camaçari, descrito como o maior eletroposto da América Latina, dedicado a abastecer a frota de motoristas."],
+      ["Em quais cidades a eDrive Go atua?","A operação está centrada em Salvador, Lauro de Freitas e toda a região metropolitana, próximo ao hub de recarga em Camaçari."],
+      ["Isso é uma locadora de carros comum?","Não. É uma operação pensada especificamente para motorista de aplicativo, com atendimento pelo WhatsApp, análise de documentação e condições — sem caução, com seguro e recargas inclusas — diferentes de uma locadora tradicional."],
+      ["Quantos carros tem disponíveis nesta etapa?","A frota é limitada e a disponibilidade muda conforme a demanda. A confirmação de vaga é feita direto no atendimento do grupo do WhatsApp."]
+    ]},
+    {cat:"Como funciona o processo", items:[
+      ["Como funciona o aluguel do carro?","Você entra no grupo do WhatsApp, fala com a equipe, envia a documentação pedida, passa por uma análise e, se aprovado, assina o contrato de locação e sai com o carro, conforme disponibilidade."],
+      ["Quais são os passos, do início ao fim?","São 5 passos: 1) entrar no grupo do WhatsApp, 2) enviar a documentação, 3) passar pela análise de perfil e antecedentes, 4) ler e assinar o contrato, 5) receber o carro."],
+      ["Quanto tempo demora do primeiro contato até eu receber o carro?","Não há um prazo fixo divulgado — depende da análise da documentação e da disponibilidade da frota no momento. A equipe informa o andamento direto no atendimento."],
+      ["Preciso ir a algum escritório físico?","O primeiro contato e a condução de todo o processo — documentação, análise, contrato — acontecem pelo WhatsApp, no atendimento com a equipe."],
+      ["Entrar no grupo do WhatsApp já garante que vou receber o carro?","Não. O contato pelo grupo não garante aprovação, contratação, veículo específico ou prazo de entrega — tudo depende da análise de documentação e da disponibilidade da frota."],
+      ["Quem faz a análise da minha documentação?","A própria equipe da eDrive Go, com base em perfil, documentação, antecedentes e critérios internos da operação."]
+    ]},
+    {cat:"Valores e pagamento", items:[
+      ["Quanto custa o aluguel?","R$ 1.799 por semana, com tudo incluso."],
+      ["O valor de R$1.799/semana já inclui tudo?","Inclui revisões e manutenção, seguro e 2 recargas gratuitas por semana no ecossistema eDrive. Não há caução nem entrada."],
+      ["Preciso pagar caução ou dar entrada?","Não. O modelo é sem caução e sem entrada — o compromisso é só o aluguel semanal."],
+      ["Existe alguma taxa para entrar no grupo ou participar do processo?","Não. Entrar no grupo, falar com a equipe e passar pela análise não tem custo. O único valor é o aluguel semanal, depois do contrato assinado."],
+      ["Como e quando eu pago o aluguel semanal?","A forma e o momento exato do pagamento são explicados pela equipe durante o atendimento e detalhados no contrato antes da assinatura."],
+      ["As condições podem mudar depois que eu assinar?","As condições confirmadas no atendimento e no contrato são as que valem para o seu aluguel. Mudanças futuras na operação não alteram o que já foi acordado por escrito com você."],
+      ["Existe multa ou fidelidade para eu sair do aluguel?","Regras de rescisão, fidelidade e eventuais custos de saída são detalhadas no próprio contrato, lido com a equipe antes da assinatura — não há letra escondida."]
+    ]},
+    {cat:"Documentação e elegibilidade", items:[
+      ["Quais documentos posso precisar enviar?","CNH, RG ou CPF, comprovante de residência, certidão de antecedentes criminais e dados de atuação em aplicativos."],
+      ["Preciso de uma categoria especial de habilitação?","A exigência de habilitação segue os critérios internos da análise; confirme sua situação específica com a equipe no atendimento."],
+      ["Preciso já estar cadastrado em algum aplicativo antes de me candidatar?","A eDrive Go pode solicitar dados de atuação em aplicativos como parte da análise, então já ter histórico em apps como Uber ou 99 ajuda — mas confirme sua situação com a equipe."],
+      ["Ter antecedentes criminais me desclassifica automaticamente?","A certidão de antecedentes faz parte da documentação analisada; o critério de aprovação é interno e avaliado caso a caso pela equipe."],
+      ["Moro fora de Salvador ou Lauro de Freitas, posso participar?","A operação está focada em Salvador, Lauro de Freitas e região metropolitana, pela proximidade do hub de recarga em Camaçari. Fora dessa região, confirme disponibilidade direto com a equipe."],
+      ["Depois de enviar meus documentos, quanto tempo demora a análise?","Não há prazo fixo divulgado. A equipe acompanha e informa o andamento pelo próprio grupo do WhatsApp."],
+      ["E se minha documentação for reprovada?","A equipe informa o resultado da análise pelo atendimento. Não há garantia de aprovação — ela depende do perfil, da documentação, dos antecedentes e dos critérios internos da operação."]
+    ]},
+    {cat:"O veículo", items:[
+      ["Qual é o carro oferecido?","O BYD Dolphin, elétrico e automático."],
+      ["O carro é 0km?","Sim, os carros da frota são BYD Dolphin 0km."],
+      ["O carro é automático?","Sim, e elétrico — sem marchas, sem embreagem e silencioso."],
+      ["Posso escolher a cor ou versão do carro?","Isso não é informado publicamente; disponibilidade de cor e versão deve ser confirmada com a equipe no momento da análise."],
+      ["O carro tem painel ou interior digital?","Sim, o BYD Dolphin da frota tem interior digital, pensado para conforto em jornadas longas de trabalho."],
+      ["Existe algum limite de km rodado por dia?","Isso não é informado publicamente nesta página; qualquer regra de uso sobre quilometragem é explicada no contrato, antes da assinatura."]
+    ]},
+    {cat:"Seguro, manutenção e sinistro", items:[
+      ["O seguro está incluso no aluguel?","Sim, o seguro está incluso no valor semanal."],
+      ["O que exatamente o seguro cobre?","As regras de cobertura e a franquia são explicadas com clareza no contrato, direto com a equipe, antes de você assinar."],
+      ["Tem franquia em caso de sinistro?","Sim, a franquia existe e é detalhada no contrato — a equipe explica as regras antes da assinatura, para que a decisão seja consciente."],
+      ["As revisões são gratuitas?","Sim, a manutenção e as revisões são por conta da eDrive Go, incluídas no aluguel."],
+      ["E se o carro tiver algum problema mecânico?","A manutenção é por conta da eDrive Go. Em caso de problema, o contato para resolução é feito direto com a equipe pelo WhatsApp."],
+      ["Quem escolhe onde o carro é revisado?","Isso não é informado publicamente; o fluxo de revisão e manutenção é explicado pela equipe durante o atendimento."]
+    ]},
+    {cat:"Recarga e ecossistema elétrico", items:[
+      ["Onde eu recarrego o carro?","No hub de recarga da eDrive Energy em Camaçari, descrito como o maior eletroposto da América Latina, com mais de 80 carregadores."],
+      ["Quantas recargas grátis eu tenho por semana?","2 recargas gratuitas por semana, inclusas no aluguel."],
+      ["E se eu precisar recarregar além do que está incluso?","Isso não é informado publicamente nesta página; confirme as condições de recarga extra direto com a equipe."],
+      ["Existem outros pontos de recarga além de Camaçari?","A página oficial cita o hub de Camaçari como a estrutura principal do ecossistema; outros pontos, se existirem, devem ser confirmados com a equipe."],
+      ["Preciso me preocupar em ficar sem bateria durante o dia de trabalho?","O BYD Dolphin 0km tem autonomia pensada para rodar o dia com o carro carregado, segundo a proposta da eDrive Go — a rotina real de recarga depende do seu uso e deve ser combinada com a equipe."]
+    ]},
+    {cat:"Apps de corrida", items:[
+      ["Posso rodar em Uber, 99 e outros aplicativos?","Sim, o carro pode ser usado nos principais aplicativos de corrida."],
+      ["Posso rodar no perfil Black ou Comfort?","A elegibilidade para categorias como Black depende das regras vigentes da própria plataforma, da cidade, do modelo, do ano do veículo e da data de cadastro."],
+      ["A eDrive Go garante que serei aceito no perfil Black?","Não. A recomendação é confirmar a regra atualizada direto com a plataforma (Uber, 99 etc.) e com a equipe antes de contar com essa categoria."],
+      ["O carro tem alguma restrição de app definida pela eDrive Go?","Isso não é informado publicamente nesta página; qualquer regra de uso do carro nos aplicativos é tratada no contrato e no atendimento."]
+    ]},
+    {cat:"Contrato e transparência", items:[
+      ["Existe contrato assinado?","Sim, um contrato de locação formal é assinado antes de você sair com o carro."],
+      ["Quando o contrato é assinado?","Depois da análise da documentação e conforme a disponibilidade do veículo."],
+      ["Posso ler o contrato antes de decidir?","Sim. Antes de assinar, você lê o contrato com a equipe: seguro, franquia, responsabilidades, regras de uso, pagamentos e possíveis custos em caso de sinistro."],
+      ["O contrato tem letra escondida ou pegadinha?","A proposta da eDrive Go é de transparência contratual: tudo é lido e explicado com a equipe antes da assinatura, para que a decisão seja consciente."],
+      ["O carro é meu (comprado) ou alugado?","É alugado. O modelo é 100% locação semanal — você não financia nem compra o carro."],
+      ["Existe algum programa para eu comprar o carro no futuro?","Isso não é divulgado publicamente no momento; o modelo atual da operação é de locação. Para novidades sobre esse tipo de programa, confirme direto com a equipe."]
+    ]},
+    {cat:"Cancelamento, atendimento e suporte", items:[
+      ["Posso desistir depois de entrar no grupo, antes de assinar o contrato?","Sim. Entrar no grupo e conversar com a equipe não é um compromisso — ele só existe depois do contrato assinado."],
+      ["Posso encerrar o aluguel quando eu quiser, depois de assinar?","As regras de rescisão e eventuais custos de saída ficam definidas no contrato, explicado pela equipe antes da assinatura."],
+      ["O que acontece se eu atrasar o pagamento semanal?","As regras para atraso de pagamento são tratadas no contrato de locação; confirme esse ponto direto com a equipe antes de assinar."],
+      ["Como falo com a equipe da eDrive Go?","Pelo grupo oficial no WhatsApp — é o mesmo canal usado do primeiro contato até a entrega do carro."],
+      ["Existe uma comunidade de motoristas?","Sim. Além do atendimento, você entra num grupo com outros motoristas que já fizeram a virada elétrica, para trocar rotas, dúvidas e experiências."],
+      ["O suporte funciona todos os dias?","Os horários de atendimento não são informados publicamente nesta página; confirme a disponibilidade direto no grupo do WhatsApp."],
+      ["Onde posso acompanhar a eDrive Go nas redes sociais?","No Instagram: @edrivego e @edriveenergy."],
+      ["Onde encontro a Política de Privacidade?","No rodapé do site oficial da eDrive Go, em edrivego.com."]
+    ]}
+  ];
+
+  var root = document.getElementById('faqRoot');
+  var chipsWrap = document.getElementById('chips');
+  var countLine = document.getElementById('countLine');
+  var noResults = document.getElementById('noResults');
+  var totalCount = 0;
+
+  DATA.forEach(function(group, gi){
+    totalCount += group.items.length;
+    var chip = document.createElement('div');
+    chip.className = 'chip';
+    chip.dataset.cat = 'c' + gi;
+    chip.textContent = group.cat;
+    chipsWrap.appendChild(chip);
+
+    var section = document.createElement('section');
+    section.className = 'cat-section';
+    section.dataset.cat = 'c' + gi;
+
+    var title = document.createElement('div');
+    title.className = 'cat-title';
+    title.textContent = group.cat;
+    section.appendChild(title);
+
+    group.items.forEach(function(pair){
+      var d = document.createElement('details');
+      d.className = 'faq-item';
+      d.dataset.q = pair[0].toLowerCase();
+      d.dataset.a = pair[1].toLowerCase();
+
+      var summary = document.createElement('summary');
+      var qText = document.createElement('span');
+      qText.className = 'q-text';
+      qText.textContent = pair[0];
+      var chev = document.createElement('span');
+      chev.className = 'chev';
+      chev.innerHTML = '&#9654;';
+      summary.appendChild(qText);
+      summary.appendChild(chev);
+
+      var answer = document.createElement('div');
+      answer.className = 'answer';
+      answer.textContent = pair[1];
+
+      d.appendChild(summary);
+      d.appendChild(answer);
+      section.appendChild(d);
+    });
+
+    root.appendChild(section);
+  });
+
+  countLine.textContent = 'Mostrando ' + totalCount + ' de ' + totalCount + ' perguntas';
+
+  var activeCat = 'all';
+  var searchInput = document.getElementById('search');
+
+  function applyFilter(){
+    var term = searchInput.value.trim().toLowerCase();
+    var visible = 0;
+    document.querySelectorAll('.cat-section').forEach(function(section){
+      var catMatch = activeCat === 'all' || section.dataset.cat === activeCat;
+      var sectionHasVisible = false;
+      section.querySelectorAll('.faq-item').forEach(function(item){
+        var matches = catMatch && (term === '' || item.dataset.q.indexOf(term) !== -1 || item.dataset.a.indexOf(term) !== -1);
+        item.style.display = matches ? '' : 'none';
+        if (matches){ sectionHasVisible = true; visible++; }
+        if (!matches) item.open = false;
+      });
+      section.style.display = sectionHasVisible ? '' : 'none';
+    });
+    countLine.textContent = 'Mostrando ' + visible + ' de ' + totalCount + ' perguntas';
+    noResults.style.display = visible === 0 ? 'block' : 'none';
+  }
+
+  chipsWrap.addEventListener('click', function(e){
+    var chip = e.target.closest('.chip');
+    if (!chip) return;
+    chipsWrap.querySelectorAll('.chip').forEach(function(c){ c.classList.remove('active'); });
+    chip.classList.add('active');
+    activeCat = chip.dataset.cat;
+    applyFilter();
+  });
+
+  searchInput.addEventListener('input', applyFilter);
+})();
+</script>
+
+</body>
+</html>
