@@ -10,4 +10,11 @@ Landing page de **vendas** da eDrive Go — aluguel de BYD Dolphin 0km para moto
 ## Deploy (Vercel)
 
 Site estático. A Vercel serve `index.html` na raiz automaticamente — sem build.
-`vercel.json` define apenas headers de segurança.
+`vercel.json` define os headers de segurança e as rotas das páginas do Instagram.
+
+## Links do Instagram
+
+- [@edrivego.br](https://edrivego.com/ig-ego): aplicativo e grupo sobre aluguel de carro.
+- [@goapp.br](https://edrivego.com/ig-go): aplicativo e grupo de cupons.
+
+As páginas são `ig-ego.html` e `ig-go.html`. Logo e estilos compartilhados ficam em `ig-assets/`. O botão principal pulsa suavemente e respeita a preferência por movimento reduzido.
