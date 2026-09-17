@@ -64,6 +64,7 @@ main {
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
+  animation: pulse-button 4.5s ease-in-out infinite;
   transition: transform 180ms ease-out, background-color 180ms ease-out;
 }
 
@@ -120,11 +121,16 @@ main {
 .arrow { width: 18px; height: 18px; opacity: .7; }
 
 .link:focus-visible { outline: 3px solid #ae76d1; outline-offset: 6px; }
-.link:active { transform: scale(.98); }
+.link:active { animation: none; transform: scale(.98); }
 
 @media (hover: hover) {
-  .link:hover { transform: translateY(-2px); background-color: #f0e9f6; }
+  .link:hover { background-color: #f0e9f6; }
   .link-primary:hover { background-color: #590b91; }
+}
+
+@keyframes pulse-button {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.035); }
 }
 
 @keyframes pulse-ring {
