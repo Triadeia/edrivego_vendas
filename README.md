@@ -17,4 +17,4 @@ Site estático. A Vercel serve `index.html` na raiz automaticamente — sem buil
 - [@edrivego.br](https://edrivego.com/ig-ego): aplicativo e grupo sobre aluguel de carro.
 - [@goapp.br](https://edrivego.com/ig-go): aplicativo e grupo de cupons.
 
-As páginas são `ig-ego.html` e `ig-go.html`. Logo e estilos compartilhados ficam em `ig-assets/`. O botão principal pulsa suavemente e respeita a preferência por movimento reduzido.
+As páginas são `ig-ego.html` e `ig-go.html`. Logo e estilos compartilhados ficam em `ig-assets/`. Os dois botões pulsam lentamente, em ciclos de 4,5 segundos, respeitando a preferência por movimento reduzido.

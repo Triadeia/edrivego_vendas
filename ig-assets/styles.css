@@ -74,28 +74,30 @@ main {
   box-shadow: 0 8px 24px rgb(75 0 129 / 12%);
 }
 
-.link-primary::before {
+.link::before {
   content: "";
   position: absolute;
   inset: -1px;
   z-index: -1;
   border: 2px solid rgb(130 55 183 / 45%);
   border-radius: inherit;
-  animation: pulse-ring 2.6s ease-out infinite;
+  animation: pulse-ring 4.5s ease-out infinite;
   pointer-events: none;
 }
 
-.link-primary::after {
+.link::after {
   content: "";
   position: absolute;
   inset: 0;
   z-index: -1;
   border-radius: inherit;
-  background: #7a24b8;
+  background: #e4d0f3;
   opacity: 0;
-  animation: pulse-light 2.6s ease-in-out infinite;
+  animation: pulse-light 4.5s ease-in-out infinite;
   pointer-events: none;
 }
+
+.link-primary::after { background: #7a24b8; }
 
 .link strong {
   display: block;
@@ -144,5 +146,5 @@ main {
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
-  .link-primary::before { display: none; }
+  .link::before { display: none; }
 }
