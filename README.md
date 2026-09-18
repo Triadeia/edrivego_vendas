@@ -18,9 +18,19 @@ Site estático. A Vercel serve `index.html` na raiz automaticamente — sem buil
 - [@edrivego.br](https://edrivego.com/ig-ego): download do GO APP e links para `/dolphin` e `/mg4`.
 - [@goapp.br](https://edrivego.com/ig-go): aplicativo e grupo de cupons.
 
-As páginas são `ig-ego.html` e `ig-go.html`, com logo em `ig-assets/`. A página `ig-go` continua usando `ig-assets/styles.css`.
+As páginas são `ig-ego.html` e `ig-go.html`, com estilos críticos inline e mídias versionadas em `ig-assets/`.
 
 A árvore `ig-ego` usa fundo preto, imagem do aplicativo fornecida pelo cliente e vídeos dos carros com máscara preta e texto HTML. Seus estilos críticos são inline, sem fontes externas ou framework. As mídias ficam em `ig-assets/ego/`, com nomes versionados: imagem WebP e trechos de 8 segundos extraídos dos vídeos das páginas Dolphin e MG4, em H.264 720 × 270, sem áudio e com início rápido. Os vídeos carregam depois das imagens, apenas quando visíveis; pausam fora da tela e em abas ocultas. Preferências de movimento reduzido, economia de dados e conexão 2G mantêm as capas estáticas. A página não exibe controle de pausa. A borda roxa de 1,5 px tem luz em movimento; um cursor decorativo com profundidade percorre os três cartões em ciclos de 14 segundos, sincronizado com zoom suave de 2,5%. O cursor não intercepta cliques. A demonstração pausa durante interação por mouse ou teclado e quando sai da tela. Esses efeitos também respeitam movimento reduzido e economia de dados. O comportamento está em `ig-assets/ego/experience-v2.js`; os nomes versionados evitam conteúdo antigo no cache.
+
+## GO App
+
+A página `/ig-go` usa a mesma estrutura visual da árvore eDrive GO: fundo preto, logo branca GO fornecida pelo cliente, perfil `@goapp.br`, bordas roxas com luz em movimento e cursor com profundidade. O cursor percorre os dois cartões em ciclos de 12 segundos, com zoom de 2,5% sincronizado.
+
+- Primeiro cartão: arte de download fornecida pelo cliente, link de passageiros `https://aqr.la/go_p`.
+- Segundo cartão: arte de primeira viagem grátis fornecida pelo cliente, mantendo o grupo de cupons original do WhatsApp.
+- Imagens WebP responsivas de 720 e 1200 px em `ig-assets/go/`; logo SVG original. Os textos das artes foram preservados, com descrições acessíveis nos links.
+- Animações sem bibliotecas, pausadas fora da tela/aba oculta e desativadas para movimento reduzido, economia de dados ou conexão 2G. Os efeitos não interceptam cliques.
+- Cache imutável dos assets versionados, sem alterações na página `/ig-ego`.
 
 ## MG4 Comfort
 
