@@ -47,3 +47,9 @@ A página `/ig-go` usa a mesma estrutura visual da árvore eDrive GO: fundo pret
 ## BYD Dolphin
 
 A página `/dolphin` duplica a oferta atual do BYD da página inicial, com os mesmos textos, vídeo, imagens, preços e botões do WhatsApp. Possui URL canônica própria e compartilha os arquivos de imagem em `/assets/`.
+
+## Links para aluguel
+
+A página `/app-alugar` duplica a estrutura de `/ig-ego` e apresenta somente os dois cartões de locação: BYD Dolphin GS (`/dolphin`) e MG4 Comfort (`/mg4`). Mantém a logo, o perfil `@edrivego.br`, os vídeos otimizados, as bordas com luz roxa e o cursor com zoom suave. O download do aplicativo não aparece nesta página.
+
+Os vídeos e capas são compartilhados com a página original, que permanece intacta. A animação é adaptada para dois cartões em ciclos de 12 segundos, com JavaScript versionado em `ig-assets/ego/rental-v1.js`. A rota está definida em `vercel.json`; título, descrição e URL canônica são próprios.
