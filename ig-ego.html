@@ -22,6 +22,9 @@
     main { width: min(100%, 720px); margin-inline: auto; padding: clamp(40px, 7vw, 72px) max(20px, env(safe-area-inset-right)) max(32px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left)); }
     .brand { margin: 0 0 clamp(48px, 8vw, 80px); text-align: center; }
     .logo { display: block; width: min(100%, clamp(240px, 64vw, 440px)); height: auto; margin-inline: auto; filter: brightness(0) invert(1); }
+    .profile { display: inline-flex; align-items: center; min-height: 32px; margin-top: 8px; color: #b9b5bf; font-size: 13px; line-height: 1.4; letter-spacing: .02em; text-decoration: none; }
+    .profile:hover { color: #fff; }
+    .profile:focus-visible { outline: 2px solid #c8a5ff; outline-offset: 4px; border-radius: 4px; }
     .links { position: relative; display: grid; gap: clamp(28px, 5vw, 56px); --tour-duration: 14s; --tour-ease: cubic-bezier(.45, 0, .2, 1); }
     .card { position: relative; isolation: isolate; display: grid; place-items: center; aspect-ratio: 8 / 3; min-height: 138px; padding: 24px 16px; overflow: hidden; border-radius: clamp(14px, 2.3vw, 22px); background: #17141b; color: #fff; text-align: center; text-decoration: none; box-shadow: 0 0 0 1px #873bd1, 0 0 16px rgba(135, 59, 209, .18); transform-origin: center; }
     .card::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(0, 0, 0, .55); }
@@ -77,6 +80,7 @@
     <header class="brand">
       <h1 class="sr-only">eDrive GO: baixe o app ou alugue seu elétrico</h1>
       <img class="logo" src="/ig-assets/logo-edrive-go.svg" width="821" height="195" alt="eDrive GO" fetchpriority="high">
+      <a class="profile" href="https://www.instagram.com/edrivego.br/" target="_blank" rel="noopener noreferrer" aria-label="@edrivego.br no Instagram (abre em nova aba)">@edrivego.br</a>
     </header>
     <nav class="links" aria-label="Aplicativo e aluguel de carros">
       <a class="card card-app" href="https://aqr.la/go_m">
