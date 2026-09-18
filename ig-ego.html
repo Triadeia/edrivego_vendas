@@ -3,36 +3,71 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#faf8fc">
-  <title>eDrive GO</title>
-  <meta name="description" content="Comece a rodar e faturar mais com a eDrive GO. 80% do valor da corrida fica com você. Baixe o app e saiba mais sobre aluguel de carro.">
-  <meta property="og:title" content="eDrive GO">
-  <meta property="og:description" content="Comece a rodar e faturar mais. 80% do valor da corrida fica com você. Baixe o app da eDrive GO.">
-  <link rel="canonical" href="https://edrivego.com/ig-ego">
-  <meta property="og:url" content="https://edrivego.com/ig-ego">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <title>eDrive GO | Baixe o app e alugue seu elétrico</title>
+  <meta name="description" content="Baixe o GO APP e comece a faturar mais. Escolha seu elétrico: alugue um BYD Dolphin GS ou um MG4 Comfort com a eDrive GO.">
+  <link rel="canonical" href="https://www.edrivego.com/ig-ego">
+  <meta property="og:title" content="eDrive GO | Seu próximo passo começa aqui">
+  <meta property="og:description" content="Baixe o GO APP ou escolha seu elétrico: BYD Dolphin GS e MG4 Comfort.">
+  <meta property="og:url" content="https://www.edrivego.com/ig-ego">
+  <meta property="og:image" content="https://www.edrivego.com/ig-assets/ego/go-app-v1.webp">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <link rel="icon" href="/ig-assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/ig-assets/styles.css?v=20260917-3">
+  <style>
+    * { box-sizing: border-box; }
+    html { background: #000; color: #fff; -webkit-text-size-adjust: 100%; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; }
+    main { width: min(100%, 720px); margin-inline: auto; padding: clamp(40px, 7vw, 72px) max(20px, env(safe-area-inset-right)) max(32px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left)); }
+    .brand { margin: 0 0 clamp(48px, 8vw, 80px); text-align: center; }
+    .logo { display: block; width: min(100%, clamp(240px, 64vw, 440px)); height: auto; margin-inline: auto; filter: brightness(0) invert(1); }
+    .links { display: grid; gap: clamp(28px, 5vw, 56px); }
+    .card { position: relative; isolation: isolate; display: grid; place-items: center; aspect-ratio: 8 / 3; min-height: 138px; padding: 24px 16px; overflow: hidden; border-radius: clamp(14px, 2.3vw, 22px); background: #17141b; color: #fff; text-align: center; text-decoration: none; }
+    .card::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(0, 0, 0, .55); }
+    .card-app::after { background: rgba(0, 0, 0, .30); }
+    .media { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
+    video.media { opacity: 0; }
+    video.is-playing { opacity: 1; }
+    .copy { font-size: clamp(24px, 4.7vw, 44px); font-weight: 800; line-height: 1.14; letter-spacing: -.025em; text-wrap: balance; text-shadow: 0 2px 16px rgba(0, 0, 0, .45); }
+    .copy span { display: block; }
+    .card-app .copy { font-size: clamp(22px, 4.2vw, 40px); }
+    .card:focus-visible, .motion-toggle:focus-visible { outline: 3px solid #c8a5ff; outline-offset: 6px; }
+    @media (hover: hover) { .card:hover { outline: 2px solid #b493dc; outline-offset: 4px; } }
+    .motion-controls { height: 44px; margin-top: 20px; text-align: center; }
+    .motion-toggle { min-height: 44px; padding: 10px 16px; border: 0; border-radius: 6px; background: transparent; color: #b9b5bf; font: inherit; font-size: 13px; cursor: pointer; }
+    [hidden] { display: none !important; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+    @media (prefers-reduced-motion: reduce) { video.media { display: none; } }
+    @media (forced-colors: active) { .card { border: 2px solid LinkText; } .copy { text-shadow: none; } }
+  </style>
+  <script src="/ig-assets/ego/videos-v1.js" defer></script>
 </head>
 <body>
-  <main aria-label="Links da eDrive GO">
+  <main>
     <header class="brand">
+      <h1 class="sr-only">eDrive GO: baixe o app ou alugue seu elétrico</h1>
       <img class="logo" src="/ig-assets/logo-edrive-go.svg" width="821" height="195" alt="eDrive GO" fetchpriority="high">
-      <p class="profile">@edrivego.br</p>
     </header>
-    <nav class="links" aria-label="Baixar aplicativo ou entrar no grupo">
-      <a class="link link-primary" href="https://aqr.la/go_m">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 16v3a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-3"/></svg>
-        <span><strong>Comece a rodar e faturar mais</strong><small>80% do valor da corrida fica com você.</small></span>
-        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>
+    <nav class="links" aria-label="Aplicativo e aluguel de carros">
+      <a class="card card-app" href="https://aqr.la/go_m">
+        <img class="media" src="/ig-assets/ego/go-app-v1.webp" width="960" height="356" alt="" fetchpriority="high" decoding="async">
+        <span class="copy"><span>Baixe o GO APP</span><span>e comece a faturar mais</span></span>
       </a>
-      <a class="link" href="https://chat.whatsapp.com/BsA1wrGdvHQKmCOiiqcqx2?s=cl&amp;p=i&amp;mlu=4&amp;ilr=4">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.5L3 21l1.6-5A8.5 8.5 0 1 1 20.5 11.8Z"/><path d="m9 7.8-1 1.4c.7 3 2.1 4.4 5.1 5.1l1.4-1-2-1.3-.8.6a5.5 5.5 0 0 1-2.3-2.3l.6-.8Z"/></svg>
-        <span><strong>Entre no grupo</strong><small>Saiba mais sobre aluguel de carro.</small></span>
-        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>
+      <a class="card" href="/dolphin">
+        <img class="media" src="/ig-assets/ego/dolphin-poster-v1.webp" width="960" height="360" alt="" decoding="async">
+        <video class="media" data-src="/ig-assets/ego/dolphin-v1.mp4" width="720" height="270" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
+        <span class="copy"><span>Alugue um</span><span>BYD Dolphin GS</span></span>
+      </a>
+      <a class="card" href="/mg4">
+        <img class="media" src="/ig-assets/ego/mg4-poster-v1.webp" width="960" height="360" alt="" loading="lazy" decoding="async">
+        <video class="media" data-src="/ig-assets/ego/mg4-v1.mp4" width="720" height="270" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
+        <span class="copy"><span>Alugue um</span><span>MG4 Comfort</span></span>
       </a>
     </nav>
+    <div class="motion-controls">
+      <button class="motion-toggle" type="button" hidden>Pausar vídeos</button>
+    </div>
   </main>
 </body>
 </html>

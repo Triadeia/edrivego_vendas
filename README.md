@@ -15,10 +15,12 @@ Site estático. A Vercel serve `index.html` na raiz automaticamente — sem buil
 
 ## Links do Instagram
 
-- [@edrivego.br](https://edrivego.com/ig-ego): aplicativo e grupo sobre aluguel de carro.
+- [@edrivego.br](https://edrivego.com/ig-ego): download do GO APP e links para `/dolphin` e `/mg4`.
 - [@goapp.br](https://edrivego.com/ig-go): aplicativo e grupo de cupons.
 
-As páginas são `ig-ego.html` e `ig-go.html`. Logo e estilos compartilhados ficam em `ig-assets/`. Os dois botões aumentam e diminuem suavemente em ciclos de 4,5 segundos, junto com o brilho e o contorno. A animação respeita a preferência por movimento reduzido. A URL do CSS leva uma versão para renovar o cache após mudanças visuais.
+As páginas são `ig-ego.html` e `ig-go.html`, com logo em `ig-assets/`. A página `ig-go` continua usando `ig-assets/styles.css`.
+
+A árvore `ig-ego` usa fundo preto, imagem do aplicativo fornecida pelo cliente e vídeos dos carros com máscara preta e texto HTML. Seus estilos críticos são inline, sem fontes externas ou framework. As mídias ficam em `ig-assets/ego/`, com nomes versionados: imagem WebP e trechos de 8 segundos extraídos dos vídeos das páginas Dolphin e MG4, em H.264 720 × 270, sem áudio e com início rápido. Os vídeos carregam depois das imagens, apenas quando visíveis; pausam fora da tela e em abas ocultas. Preferências de movimento reduzido, economia de dados e conexão 2G mantêm as capas estáticas. O visitante também pode pausar os vídeos pelo controle da página.
 
 ## MG4 Comfort
 
