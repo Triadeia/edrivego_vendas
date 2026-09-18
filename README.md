@@ -3,9 +3,10 @@
 Landing page de **vendas** da eDrive Go — aluguel de BYD Dolphin 0km para motoristas de app.
 
 - Página estática (`index.html`, auto-contida) derivada da landing original.
-- Locação: **R$ 1.799 / semana**, tudo incluso.
+- Locação: **R$ 1.500 / semana**, com pagamento antecipado em **1x no cartão ou Pix**.
+- Caução: **R$ 2.000**, em até **4x no cartão**, separada do aluguel semanal.
 - Todos os CTAs abrem o **grupo de vendas no WhatsApp**.
-- Sem pré-reserva, taxa, PIX, formulário ou lista de espera.
+- Sem pré-reserva, formulário ou lista de espera; atendimento pelo WhatsApp.
 
 ## Deploy (Vercel)
 
