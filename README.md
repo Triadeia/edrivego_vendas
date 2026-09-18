@@ -44,6 +44,10 @@ A página `/ig-go` usa a mesma estrutura visual da árvore eDrive GO: fundo pret
 - A calculadora usa a tarifa de energia paga e não desconta as recargas gratuitas, aluguel ou caução.
 - A página inicial mantém as condições do BYD Dolphin.
 
+## Cadastro MG4 Comfort
+
+A página `/mg4-forms` duplica `/mg4`, preservando vídeos, imagens, condições comerciais e calculadora. Seus quatro CTAs de locação exibem **QUERO ALUGAR MEU MG4** e levam a `https://forms.gle/QBCDY3Up9GVc984x5`, com a orientação de cadastro abaixo de cada botão. Os textos do fluxo de locação foram adaptados para o formulário, e a página tem URL canônica própria. A rota é servida por `mg4-forms/index.html`, sem necessidade de rewrite. A página original `/mg4` continua com seu fluxo de atendimento anterior.
+
 ## BYD Dolphin
 
 A página `/dolphin` duplica a oferta atual do BYD da página inicial, com os mesmos textos, vídeo, imagens, preços e botões do WhatsApp. Possui URL canônica própria e compartilha os arquivos de imagem em `/assets/`.
