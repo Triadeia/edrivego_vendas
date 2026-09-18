@@ -31,3 +31,7 @@ As páginas são `ig-ego.html` e `ig-go.html`. Logo e estilos compartilhados fic
 - Imagens e dados do modelo: [MG Motor Brasil](https://mgmotoroficial.com.br/model/mg4).
 - A calculadora usa a tarifa de energia paga e não desconta as recargas gratuitas, aluguel ou caução.
 - A página inicial mantém as condições do BYD Dolphin.
+
+## BYD Dolphin
+
+A página `/dolphin` duplica a oferta atual do BYD da página inicial, com os mesmos textos, vídeo, imagens, preços e botões do WhatsApp. Possui URL canônica própria e compartilha os arquivos de imagem em `/assets/`.
