@@ -57,3 +57,12 @@ A página `/dolphin` duplica a oferta atual do BYD da página inicial, com os me
 A página `/app-alugar` duplica a estrutura de `/ig-ego` e apresenta somente os dois cartões de locação: BYD Dolphin GS (`/dolphin`) e MG4 Comfort (`/mg4`). Mantém a logo, o perfil `@edrivego.br`, os vídeos otimizados, as bordas com luz roxa e o cursor com zoom suave. O download do aplicativo não aparece nesta página.
 
 Os vídeos e capas são compartilhados com a página original, que permanece intacta. A animação é adaptada para dois cartões em ciclos de 12 segundos, com JavaScript versionado em `ig-assets/ego/rental-v1.js`. A rota está definida em `vercel.json`; título, descrição e URL canônica são próprios.
+
+## Chevrolet Spark EUV
+
+- Página independente: `/spark`, clonada de `/dolphin` com imagens e informações do Spark EUV.
+- Mantém R$ 1.500 por semana antecipada (1x no cartão ou Pix), caução de R$ 2.000 em até 4x no cartão, seguro, revisões e 2 recargas semanais.
+- Vídeo central: https://www.youtube.com/watch?v=PBrGCx3lI30, incorporado em 16:9 com carregamento adiado e link alternativo.
+- Imagens e especificações: https://www.chevrolet.com.br/eletrico/spark-euv.
+- HTML estático com estilos e calculadora em `spark/assets/`; conteúdo e CTAs funcionam sem JavaScript. Calculadora usa hipóteses editáveis, sem incluir aluguel/caução ou descontar recargas gratuitas.
+- A página Dolphin e as demais rotas mantêm seu conteúdo.
