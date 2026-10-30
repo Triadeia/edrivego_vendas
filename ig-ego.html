@@ -6,10 +6,10 @@
   <meta name="theme-color" content="#000000">
   <meta name="color-scheme" content="dark">
   <title>eDrive GO | Baixe o app e alugue seu elétrico</title>
-  <meta name="description" content="Baixe o GO APP e comece a faturar mais. Escolha seu elétrico: alugue um BYD Dolphin GS ou um MG4 Comfort com a eDrive GO.">
+  <meta name="description" content="Baixe o GO APP e comece a faturar mais. Escolha seu elétrico: alugue um Chevrolet Spark EUV, BYD Dolphin GS ou MG4 Comfort com a eDrive GO.">
   <link rel="canonical" href="https://www.edrivego.com/ig-ego">
   <meta property="og:title" content="eDrive GO | Seu próximo passo começa aqui">
-  <meta property="og:description" content="Baixe o GO APP ou escolha seu elétrico: BYD Dolphin GS e MG4 Comfort.">
+  <meta property="og:description" content="Baixe o GO APP ou escolha seu elétrico: Chevrolet Spark EUV, BYD Dolphin GS e MG4 Comfort.">
   <meta property="og:url" content="https://www.edrivego.com/ig-ego">
   <meta property="og:image" content="https://www.edrivego.com/ig-assets/ego/go-app-v1.webp">
   <meta property="og:type" content="website">
@@ -25,7 +25,7 @@
     .profile { display: inline-flex; align-items: center; min-height: 32px; margin-top: 8px; color: #b9b5bf; font-size: 13px; line-height: 1.4; letter-spacing: .02em; text-decoration: none; }
     .profile:hover { color: #fff; }
     .profile:focus-visible { outline: 2px solid #c8a5ff; outline-offset: 4px; border-radius: 4px; }
-    .links { position: relative; display: grid; gap: clamp(28px, 5vw, 56px); --tour-duration: 14s; --tour-ease: cubic-bezier(.45, 0, .2, 1); }
+    .links { position: relative; display: grid; gap: clamp(28px, 5vw, 56px); --tour-duration: 18s; --tour-ease: cubic-bezier(.45, 0, .2, 1); }
     .card { position: relative; isolation: isolate; display: grid; place-items: center; aspect-ratio: 8 / 3; min-height: 138px; padding: 24px 16px; overflow: hidden; border-radius: clamp(14px, 2.3vw, 22px); background: #17141b; color: #fff; text-align: center; text-decoration: none; box-shadow: 0 0 0 1px #873bd1, 0 0 16px rgba(135, 59, 209, .18); transform-origin: center; }
     .card::after { content: ""; position: absolute; inset: 0; z-index: -1; background: rgba(0, 0, 0, .55); }
     .card-app::after { background: rgba(0, 0, 0, .30); }
@@ -49,6 +49,7 @@
     .motion-ready:not(.motion-disabled) .card:nth-of-type(1) { animation-name: card-one; }
     .motion-ready:not(.motion-disabled) .card:nth-of-type(2) { animation-name: card-two; }
     .motion-ready:not(.motion-disabled) .card:nth-of-type(3) { animation-name: card-three; }
+    .motion-ready:not(.motion-disabled) .card:nth-of-type(4) { animation-name: card-four; }
     .motion-ready:not(.motion-disabled) .floating-cursor { animation: cursor-tour var(--tour-duration) var(--tour-ease) infinite both; }
     .links.motion-paused .card, .links.motion-paused .floating-cursor, .links.motion-paused .edge-light::before,
     .links:focus-within .card, .links:focus-within .floating-cursor { animation-play-state: paused; }
@@ -58,22 +59,24 @@
       .links:hover .floating-cursor { visibility: hidden; }
     }
     @keyframes edge-orbit { to { transform: translate(-50%, -50%) rotate(360deg); } }
-    @keyframes card-one { 0%, 6%, 32%, 100% { transform: scale(1); } 14%, 24% { transform: scale(1.025); } }
-    @keyframes card-two { 0%, 36%, 62%, 100% { transform: scale(1); } 44%, 54% { transform: scale(1.025); } }
-    @keyframes card-three { 0%, 66%, 92%, 100% { transform: scale(1); } 74%, 84% { transform: scale(1.025); } }
+    @keyframes card-one { 0%, 3%, 25%, 100% { transform: scale(1); } 9%, 17% { transform: scale(1.025); } }
+    @keyframes card-two { 0%, 28%, 50%, 100% { transform: scale(1); } 34%, 42% { transform: scale(1.025); } }
+    @keyframes card-three { 0%, 53%, 75%, 100% { transform: scale(1); } 59%, 67% { transform: scale(1.025); } }
+    @keyframes card-four { 0%, 78%, 100% { transform: scale(1); } 84%, 92% { transform: scale(1.025); } }
     @keyframes cursor-tour {
       0% { opacity: 0; transform: translate3d(4px, -36px, 0) rotate(-8deg) scale(.94); }
-      6% { opacity: 1; }
-      14%, 24% { opacity: 1; transform: translate3d(-4px, var(--cursor-one), 0) rotate(-3deg) scale(1.08); }
-      44%, 54% { opacity: 1; transform: translate3d(2px, var(--cursor-two), 0) rotate(3deg) scale(1.08); }
-      74%, 84% { opacity: 1; transform: translate3d(-4px, var(--cursor-three), 0) rotate(-3deg) scale(1.08); }
-      93%, 100% { opacity: 0; transform: translate3d(4px, var(--cursor-end), 0) rotate(5deg) scale(.94); }
+      3% { opacity: 1; }
+      9%, 17% { opacity: 1; transform: translate3d(-4px, var(--cursor-one), 0) rotate(-3deg) scale(1.08); }
+      34%, 42% { opacity: 1; transform: translate3d(2px, var(--cursor-two), 0) rotate(3deg) scale(1.08); }
+      59%, 67% { opacity: 1; transform: translate3d(-4px, var(--cursor-three), 0) rotate(-3deg) scale(1.08); }
+      84%, 92% { opacity: 1; transform: translate3d(2px, var(--cursor-four), 0) rotate(3deg) scale(1.08); }
+      98%, 100% { opacity: 0; transform: translate3d(4px, var(--cursor-end), 0) rotate(5deg) scale(.94); }
     }
     .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
     @media (prefers-reduced-motion: reduce) { video.media, .floating-cursor { display: none; } .links .card { animation: none !important; transform: none; } .links .edge-light::before { animation: none !important; } }
     @media (forced-colors: active) { .card { border: 2px solid LinkText; } .copy { text-shadow: none; } .edge-light, .floating-cursor { display: none; } }
   </style>
-  <script src="/ig-assets/ego/experience-v2.js" defer></script>
+  <script src="/ig-assets/ego/experience-v3.js" defer></script>
 </head>
 <body>
   <main>
@@ -83,6 +86,11 @@
       <a class="profile" href="https://www.instagram.com/edrivego.br/" target="_blank" rel="noopener noreferrer" aria-label="@edrivego.br no Instagram (abre em nova aba)">@edrivego.br</a>
     </header>
     <nav class="links" aria-label="Aplicativo e aluguel de carros">
+      <a class="card" href="/spark">
+        <img class="media" src="https://www.chevrolet.com.br/content/dam/chevrolet/south-america/brazil/portuguese/index/visid/electric/spark-euv/refresh-2027/galeria/cerrada/chevrolet-spark-preto-vista-lateral-traseira.jpeg?imwidth=960" width="960" height="540" alt="" fetchpriority="high" decoding="async">
+        <span class="edge-light" aria-hidden="true"></span>
+        <span class="copy"><span class="prompt">Clique para alugar um</span><span>CHEVROLET SPARK EUV</span></span>
+      </a>
       <a class="card card-app" href="https://aqr.la/go_m">
         <img class="media" src="/ig-assets/ego/go-app-v1.webp" width="960" height="356" alt="" fetchpriority="high" decoding="async">
         <span class="edge-light" aria-hidden="true"></span>
