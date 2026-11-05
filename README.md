@@ -66,3 +66,10 @@ Os vídeos e capas são compartilhados com a página original, que permanece int
 - Imagens e especificações: https://www.chevrolet.com.br/eletrico/spark-euv.
 - HTML estático com estilos e calculadora em `spark/assets/`; conteúdo e CTAs funcionam sem JavaScript. Calculadora usa hipóteses editáveis, sem incluir aluguel/caução ou descontar recargas gratuitas.
 - A página Dolphin e as demais rotas mantêm seu conteúdo.
+
+## Aplicação Spark EUV
+
+- `/spark-link` duplica a página `/spark`, com os quatro CTAs de aplicação apontando diretamente para `https://forms.gle/S9fYnJrQjZ4jio8u6`. As orientações de inscrição acompanham esse fluxo, mantendo preços, imagens, vídeo, FAQ e calculadora.
+- `/spark-grupo` é a página de agradecimento em uma única seção, com a identidade visual e a logo da eDrive GO. Informa a análise humana pelo time jurídico, o prazo de 15 a 20 dias e o contato para comunicar aprovação ou negativa, com botão para o grupo de WhatsApp já utilizado em `/spark`.
+- As duas rotas são diretórios estáticos com `index.html`; não exigem novos rewrites. A página original `/spark` permanece intacta.
+- O formulário externo não é alterado por estas páginas; a mensagem de confirmação do Google Forms pode apontar para `/spark-grupo`.
