@@ -23,6 +23,8 @@
     }
   ],
   "rewrites": [
+    { "source": "/spark-link", "destination": "/spark-link/index.html" },
+    { "source": "/spark-grupo", "destination": "/spark-grupo/index.html" },
     { "source": "/ig-ego", "destination": "/ig-ego.html" },
     { "source": "/ig-go", "destination": "/ig-go.html" },
     { "source": "/app-alugar", "destination": "/app-alugar.html" }
